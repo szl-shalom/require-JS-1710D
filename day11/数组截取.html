@@ -1,0 +1,40 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-16 10:50:59
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-16 19:50:03
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 2, 34, 5, 8, 90]
+        //将数组每4为分组 一共能分多少组？
+        console.log(Math.ceil(arr.length / 4))
+        // 第一组 [1,2,3,4]
+        console.log(arr.slice(0, 4))
+        // 第二组 [5, 6, 7, 8]
+        console.log(arr.slice(4, 8))
+        // 第三组 [9, 2, 34, 5]
+        console.log(arr.slice(8, 12))
+        // 第四组 [8, 90]
+        console.log(arr.slice(12, 16))
+
+        // 第二十组 ？？
+        console.log(arr.slice(12, 16))
+
+        // this.data.slice(  (this.index-1)*this.pageSize , this.index * this.pageSize    )
+    </script>
+</body>
+
+</html>

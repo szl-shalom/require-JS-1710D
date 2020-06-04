@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+        
+        #box {
+            width: 400px;
+            height: 550px;
+            background: turquoise;
+            border-radius: 10%;
+            margin: auto;
+        }
+        
+        #head {
+            width: 400px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        #head>h2 {
+            color: #fff;
+        }
+        
+        #body {
+            width: 400px;
+            height: 450px;
+        }
+        
+        #sel {
+            margin-left: 20px;
+            border-radius: 5px;
+            background: khaki;
+            float: left;
+        }
+        
+        #foot {
+            float: left;
+        }
+        
+        #foot>span {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #fff;
+            line-height: 15px;
+            text-align: center;
+            display: inline-block;
+            background: pink;
+            margin-left: 5px;
+        }
+        
+        #foot>span.active {
+            background: khaki;
+        }
+        
+        #left {
+            width: 90px;
+            height: 450px;
+            float: left;
+        }
+        
+        #right {
+            width: 310px;
+            height: 450px;
+            float: left;
+        }
+        
+        #left>li {
+            width: 80px;
+            height: 25px;
+            background: #fff;
+            line-height: 25px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        
+        #left>li.active {
+            background: yellow;
+        }
+        
+        #right>li {
+            width: 80px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 5px;
+            float: left;
+            border: 1px solid #fff;
+        }
+        .page span.active{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div class="list">
+
+    </div>
+
+    <select></select>
+    <div class="page">
+
+    </div>
+    <script src="js/require.js" data-main="js/main"></script>
+
+
+</body>
+
+</html>

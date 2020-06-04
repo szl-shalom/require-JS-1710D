@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="background: red;width:100px;height:100px"></div>
+    <button>停止</button>
+    <button>停止</button>
+    <script src="./velocity.min.js"></script>
+    <script>
+        Velocity(document.querySelector("div"), {
+            marginLeft: 500,
+        }, {
+            duration: 2000,
+            easing: "swing",
+            begin: function () {
+                console.log("动画开始")
+            },
+            complete:function(){
+                console.log("动画结束")
+            }
+        })
+
+        Velocity(document.querySelector("div"), "slideUp")
+        Velocity(document.querySelector("div"), "slideDown")
+        Velocity(document.querySelector("div"), "fadeOut")
+        Velocity(document.querySelector("div"), "fadeIn")
+        document.querySelector("button").addEventListener("click", () => {
+            Velocity(document.querySelector("div"), "pause")
+        })
+
+        document.querySelectorAll("button")[1].addEventListener("click", () => {
+            Velocity(document.querySelector("div"), "resume")
+        })
+
+    </script>
+</body>
+
+</html>

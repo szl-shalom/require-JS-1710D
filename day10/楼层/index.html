@@ -1,0 +1,72 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-14 16:26:14
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-16 15:47:07
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .floor-word {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+
+        .floor-word li.active {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="floor-content">
+        <li>
+            <h1>A</h1>
+            <p>阿拉斯加</p>
+        </li>
+        <li>
+            <h1>A</h1>
+            <p>阿拉斯加</p>
+            <p>阿拉斯加</p>
+            <p>阿拉斯加</p>
+            <p>阿拉斯加</p>
+        </li>
+        <li>
+            <h1>A</h1>
+            <p>阿拉斯加</p>
+        </li>
+        <li>
+            <h1>A</h1>
+            <p>阿拉斯加</p>
+        </li>
+    </ul>
+    <ul class="floor-word">
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+    </ul>
+
+    <script src="./lib/require.js" data-main="./js/main"></script>
+</body>
+
+</html>

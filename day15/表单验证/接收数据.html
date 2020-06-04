@@ -1,0 +1,35 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-21 11:47:40
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-22 09:10:14
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getUrlPar() {
+            var obj = {}
+            location.search.slice(1).split("&").forEach(function (item) {
+                obj[item.split("=")[0]] = decodeURI(item.split("=")[1])
+            })
+            return obj
+        }
+
+
+        var a = JSON.parse('{"' + location.search.slice(1).replace(/&/g, '","').replace(/=/g, '":"') + '"}')
+      
+    </script>
+</body>
+
+</html>

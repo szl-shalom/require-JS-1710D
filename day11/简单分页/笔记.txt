@@ -1,0 +1,16 @@
+1、
+排版
+2、渲染页码
+    数据的总条数: this.data.length
+    每页显示的条数：pageSize
+    var n=Math.ceil(this.data.length/pageSize)  number
+    for(var i=1;i<=n;i++){
+
+    }
+3、点击页码切换对应的数据  pageSize；10
+   当前页的下标    当前页 i
+        0           1        [0,10]            [(i-1)*pageSize,i*pageSize]
+        1           2         [10,20]
+        2           3         [20,30]
+
+        n           n+1         [n*pageSize,(n+1)*pageSize]

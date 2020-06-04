@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        .wrap div {
+            width: 600px;
+            height: 80px;
+        }
+
+        .wrap div input {
+            width: 600px;
+            height: 30px;
+        }
+
+        button {
+            width: 40px;
+            height: 30px;
+            margin-right: 15px;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            border: none;
+        }
+
+        .ok {
+            background-color: rgb(49, 51, 155);
+        }
+
+        .res {
+            background-color: #f00;
+        }
+
+        table {
+            width: 600px;
+        }
+
+        table tr {
+            width: 600px;
+        }
+
+        table th {
+            height: 40px;
+            border: 1px solid #eee;
+        }
+
+        table td {
+            height: 40px;
+            border: 1px solid #eee;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div>
+            <h4>用户名</h4>
+            <input type="text" class="text1">
+        </div>
+        <div>
+            <h4>年龄</h4>
+            <input type="text" class="text2">
+        </div>
+        <button class="ok">确定</button><button class="res">重置</button>
+        <h3>用户信息表</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody class="tb">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>333</td>
+                    <td>131</td>
+                    <td><span>删除</span></td>
+                </tr> -->
+                <p><span class="all">全部删除</span></p>
+            </tbody>
+        </table>
+        <span class="all">全部删除</span>
+    </div>
+    <!-- <div style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;background-color: rgba(0, 0, 0, 0.5)"></div>
+    <div
+        style="width:300px;height: 100px;background-color: #fff;position: absolute;top: 50%;left: 50%;margin-left: -150px;margin-top:-50px;overflow: hidden;">
+        <h3>确定要删除吗？</h3>
+        <div>
+            <button class="check" style="margin-left:100px;">确定</button>
+            <button>取消</button>
+        </div>
+    </div> -->
+    <script src="js/require.js" data-main="main"></script>
+   
+</body>
+
+</html>

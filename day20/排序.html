@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header"></div>
+        <div class="footer"></div>
+        <!-- <div class="every">
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div>
+        <div class="every">
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div>
+
+        <div class="every">
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div>
+
+        <div class="every">
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div>
+
+        <div class="every">
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div>
+
+        <div class="every">
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div>
+
+        <div class="every">
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div>
+
+        <div class="every">
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div>
+
+        <div class="every">
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div> -->
+
+
+
+    </div>
+
+    <script>
+        var data = [{
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }, {
+            title: ["1", "2", "3", "4"]
+        }]
+        document.querySelector(".wrap").onclick = e => {
+            var tar = e.target;
+            if (tar.nodeName === "SPAN") {
+                tar.parentNode.previousElementSibling.innerHTML = tar.innerHTML
+            }
+            if (tar.nodeName === "BUTTON") {
+                index = +tar.innerHTML
+                render(data.slice((index - 1) * 5 , index * 5))
+            }
+        }
+
+        // 分页器
+        var maxLength = Math.ceil(data.length / 5),
+            index = 1;
+        render(data.slice(0, 5))
+        function render(data) {
+            document.querySelector(".header").innerHTML = data.map(function (item) {
+                return `
+                <div class="every">
+                    <div class="content">
+                        1
+                    </div>
+                    <div class="title">
+                        ${item.title.map(function (item) {
+                    return `<span>${item}</span>`
+                }).join("")}
+                    </div>
+                </div>
+
+                `
+            }).join("")
+        }
+        renderPage()
+        function renderPage() {
+            var str = ""
+            for (var i = 1; i <= maxLength; i++) {
+                str += `<button>${i}</button>`
+            }
+            document.querySelector(".footer").innerHTML = str;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

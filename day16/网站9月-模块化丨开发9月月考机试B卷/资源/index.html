@@ -1,0 +1,86 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-22 15:27:55
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-22 15:56:39
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<style>
+		html,
+		body,
+		.wrap {
+			height: 100%;
+			width: 100%;
+		}
+
+
+		.left {
+			width: 8%;
+			height: 100%;
+			border-right: 1px solid #ccc;
+			float: left;
+		}
+
+		.right {
+			width: 80%;
+			height: 100%;
+			float: left;
+		}
+
+		.left span {
+			width: 100%;
+			height: 36px;
+			text-align: center;
+			line-height: 36px;
+			display: inline-block;
+			background: #666;
+		}
+		.right span{
+			width: 60px;
+			height: 36px;
+			text-align: center;
+			line-height: 36px;
+			display: inline-block;
+			background: #666;
+		}
+		.wrap .active{
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+
+		<div class="left">
+			<span class="active">1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+		</div>
+		<div class="right">
+			<div class="header">
+				<span class="active">1<i>X</i>
+				</span>
+				<!-- <span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span> -->
+			</div>
+		</div>
+	</div>
+	<script src="./lib/require.js" data-main="./js/main"></script>
+</body>
+
+</html>

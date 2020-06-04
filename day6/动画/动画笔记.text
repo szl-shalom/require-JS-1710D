@@ -1,0 +1,30 @@
+1、Velocity(元素,对象1,对象2);
+    元素：被绑定的元素,
+    对象1：CSS变化的值,
+    {
+        width:500,
+        height:500,
+    }
+    对象2：配置信息
+    {
+        duration:2000,// 动画的执行时间
+        delay:1000,// 动画延迟时间
+        loop:2//动画循环次数  为true为永远持续下去
+        begin:function(){
+            //动画开始前执行
+        },
+        complete:function(){
+            //动画完成执行
+        }，
+        easing:"esae-in"// 逐渐加速
+                "ease-out"//逐渐减速
+                "ease-in-out" // 先加速，后减速
+                "linear"// 匀速
+    }
+
+2、Velocity(元素,"fadeIn")//淡入
+   Velocity(元素,"fadeOut")//淡出
+   Velocity(元素,"slideUp")//收起
+   Velocity(元素,"fadeDown")//下拉
+
+

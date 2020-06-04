@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+           
+            height: 300px;
+            border: 1px solid #ccc;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%)
+        }
+
+        .dialog {
+            width: 100px;
+            height: 36px;
+            line-height: 36px;
+            float: left;
+        }
+
+        .dialog ul {
+            display: none;
+        }
+
+        .dialog ul.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- <div class="dialog">
+            success
+            <ul class="active">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div> -->
+    </div>
+    <script src="./require.js" data-main="./js/main"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-11 11:26:28
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-23 22:20:49
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0; 
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .title {
+            border-bottom: 1px solid #aaa;
+            padding: 2px;
+
+        }
+
+        .content b {
+            color: skyblue;
+        }
+
+        i {
+            position: absolute;
+            top: 45px;
+            width: 36px;
+            height: 1px;
+            background: red;
+        }
+        span{
+            padding: 0 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <i></i>
+        <div class="title">
+            <span>热门</span>
+            <span>Abcd</span>
+            <span>qweq</span>
+        </div>
+        <div class="content">
+            <ul>
+                <li>
+                    <b>A</b>
+                    <span>鞍山市</span>
+                    <span>安庆市</span>
+                </li>
+                <li>
+                    <b>A</b>
+                    <span>鞍山市</span>
+                    <span>安庆市</span>
+                </li>
+                <li>
+                    <b>A</b>
+                    <span>鞍山市</span>
+                    <span>安庆市</span>
+                    <span>鞍山市</span>
+                    <span>安庆市</span>
+                </li>
+                <li>
+                    <b>A</b>
+                    <span>鞍山市</span>
+                    <span>安庆市</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./lib/require.js" data-main="./js/main"></script>
+</body>
+
+</html>

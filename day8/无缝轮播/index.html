@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -150px;
+            margin-left: -300px;
+            overflow: hidden;
+        }
+
+        .container {
+            height: 300px;
+            position: absolute;
+        }
+
+        .container img {
+            width: 600px;
+            height: 300px;
+            float: left;
+        }
+
+        .page {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .page li {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #ccc;
+            display: inline-block;
+            margin-left: 16px;
+        }
+
+        .page li.active {
+            background: red;
+            
+        }
+
+        .prev {
+            left: 0;
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 120px;
+            margin-top: -60px;
+            background: rgba(0, 0, 0, .3);
+            font-size: 36px;
+            color: white;
+            border: 0;
+            outline: none;
+        }
+
+        .next {
+            right: 0;
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 120px;
+            margin-top: -60px;
+            background: rgba(0, 0, 0, .3);
+            font-size: 36px;
+            color: white;
+            border: 0;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <!-- <img src="./img/1.jpeg" alt="">
+            <img src="./img/1.jpeg" alt="">
+            <img src="./img/1.jpeg" alt="">
+            <img src="./img/1.jpeg" alt=""> -->
+        </div>
+        <ul class="page">
+            <!-- <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> -->
+        </ul>
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+    </div>
+
+    <script src="./lib/require.js" data-main="./js/main1"></script>
+</body>
+
+</html>

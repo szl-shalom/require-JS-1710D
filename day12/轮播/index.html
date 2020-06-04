@@ -1,0 +1,96 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-17 15:34:48
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-17 15:57:50
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-wrap {
+            width: 1200px;
+            height: 600px;
+            margin: 150px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            position: relative;
+        }
+
+        .swiper-slide {
+            width: 1200px;
+            height: 600px;
+            float: left;
+        }
+
+        .swiper-slide img {
+            width: 1200px;
+            height: 600px;
+        }
+
+        .prev {
+            left: 0;
+            position: absolute;
+            height: 220px;
+            width: 80px;
+            text-align: center;
+            line-height: 220px;
+            border: 0;
+            outline: 0;
+            background: rgba(0, 0, 0, .3);
+            top: 50%;
+            margin-top: -110px;
+            color: white;
+            font-size: 36px;
+        }
+
+        .next {
+            right: 0;
+            position: absolute;
+            height: 220px;
+            width: 80px;
+            text-align: center;
+            line-height: 220px;
+            border: 0;
+            outline: 0;
+            background: rgba(0, 0, 0, .3);
+            top: 50%;
+            margin-top: -110px;
+            color: white;
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-wrap">
+        <div class="swiper-container">
+            <div class="swiper-slide">
+                <img src="./img/1.jpeg" alt="">
+            </div>
+           
+        </div>
+
+        <button class="prev">左</button>
+        <button class="next">右</button>
+    </div>
+    <script src="./lib/require.js" data-main="./js/main"></script>
+</body>
+
+</html>

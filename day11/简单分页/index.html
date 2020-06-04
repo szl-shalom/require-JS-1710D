@@ -1,0 +1,73 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-15 14:41:47
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-16 15:25:47
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        h3 {
+            height: 50px;
+            line-height: 50px;
+        }
+        .page{
+            display: inline-block;;
+        }
+        .page span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 30px;
+            margin-left: 5px;
+        }
+
+        .page span.active {
+            background: green;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+
+    </div>
+    <div class="wrap">
+        <button class="first">首页</button>
+        <button class="prev">上一页</button>
+        <div class="page">
+            <!-- <span>1</span>
+                    <span>1</span>
+                    <span>1</span> -->
+        </div>
+        <button class="next">下一页</button>
+        <button class="end">尾页</button>
+        <input type="text">
+        <button class="go">跳转</button>
+    </div>
+
+    <select name="" id="" class="select">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+    </select>
+
+</body>
+<script src="require.js" data-main="js/main"></script>
+
+</html>

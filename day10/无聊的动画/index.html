@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 50px solid yellowgreen;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../../day9/图片预览/img/1.jpeg" alt="">
+    <script src="./velocity.min.js"></script>
+    <script>
+        Velocity(document.querySelector("img"), {
+            rotateZ: 360,
+            rotateX: 360,
+            rotateY: 360,
+        }, {
+            duration: 2000,
+            loop: true,
+        })
+    </script>
+</body>
+
+</html>

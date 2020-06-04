@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:1000px;
+    margin: auto;
+}
+
+.wrap .header{
+    height: 500px;
+    width: 100%;
+    background: red;
+}
+.wrap .nav{
+    height: 40px;
+    background: white;
+    width: 1000px;
+}
+
+.wrap .nav .active{
+   background: red;
+   border: 0;
+}
+.wrap .nav.fixed{
+    position: fixed;
+    top: 0;
+}
+.wrap .nav .time{
+    float: right;
+}
+
+.wrap .content {
+    width:1000px;
+    margin: auto;
+}
+
+.wrap .content dl{
+    width:200px;
+    float: left;
+    padding: 10px;
+}
+
+
+.wrap .content dl dd{
+    width: 100%;
+    height: 180px;
+}
+
+.wrap .content dl dd img{
+    width: 100%;
+    height: 100%;
+}
+
+.wrap .content dl dt p .price{
+    font-size: 30px;;
+    color: red;
+}
+
+
+.wrap .content dl dt p .prevPrice{
+    font-size: 26px;
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.wrap .content dl dt p:nth-child(2){
+    font-size: 12px;
+  
+}
+
+
+.wrap .content dl dt p .hasTime{
+  float: right;
+}
+
+
+.nav-right{
+    position: fixed;
+    width: 40px;
+    height:100%;
+    background: black;
+    right: 0;
+    top: 0;
+}
+.nav-right .icon{
+    position: relative;
+    bottom: 0;
+    width: 40px;
+    color: white;
+}
+
+.nav-right .qwe{
+    background: url(../素材/images/sidebar.png) no-repeat 14px -188px;
+  
+    height: 11px;
+    position: absolute;
+    bottom: 20px;;
+}
+
+.nav-right .qwe1{
+    background: url(../素材/images/sidebar.png) no-repeat 14px -45px;
+  
+    height: 60px;
+}
+
+.mask{
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    background: red;
+    left: 0;
+    top: 0;
+}
+.mask:before{
+    content:" ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top:13px solid transparent;
+    border-left:13px solid  red;
+    border-bottom:13px solid transparent;
+    position: absolute;
+    left:100%;
+    top:37px;
+}
+
+
+
+
+
+
+

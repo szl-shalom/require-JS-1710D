@@ -1,0 +1,61 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-23 15:40:29
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-23 15:58:25
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active {
+            display: none;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="register">
+            <label for="">
+                用户名：<input type="text" class="r-username"> 
+            </label>
+            <label for="">
+            密码<input type="text" class="r-password">
+            </label>
+            <label for="">
+                确认密码<input type="text" class="r-password1">
+            </label>
+            <label for="">
+                email<input type="text" class="r-email">
+            </label>
+            <label for="">
+                昵称<input type="text" class="r-name">
+            </label>
+            <button class="user-register">注册</button>
+        </div>
+        <div class="login active">
+            <label for="">
+                用户名：<input type="text" class="l-username">
+            </label>
+            <label for="">
+                密码<input type="text" class="l-password">
+            </label>
+            <button class="user-login">登录</button>
+        </div>
+    </div>
+    <script src="./js/require.js" data-main="./js/main"></script>
+</body>
+
+</html>

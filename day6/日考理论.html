@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = b = c = 14;
+        function fn(a, b) {
+            a = 20;
+            b = 5;
+            c = 30;
+        }
+        fn();
+        console.log(a, b, c)
+    </script>
+</body>
+
+</html>

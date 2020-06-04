@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:1200px;
+    margin: 150px auto;
+}
+
+.banner{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    background: red;
+}
+.banner .container{
+    height: 300px;
+    width: 1000px;
+}
+
+.banner .container .slide{
+    width:200px;
+    padding: 10px;
+    height: 100%;
+    float: left;
+}
+
+
+.banner .container .slide img{
+    width: 100%;
+    height: 100%;
+}
+.banner .container .slide img.active{
+    border:2px solid pink
+}
+
+.banner .prev{
+    position: absolute;
+    left: -80px;
+    top:50%;
+    transform: translate(0,-50%);
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    border:1px solid #ccc;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    font-size: 36px;
+    transition: left .5s;
+}
+
+.banner .prev.active{
+    left: 0;
+}
+
+.banner .next.active{
+    right: 0;
+}
+
+.banner .next{
+    position: absolute;
+    right: -80px;
+    top:50%;
+    transform: translate(0,-50%);
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    border:1px solid #ccc;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    font-size: 36px;
+    transition: right .5s;
+}
+
+table{
+    width:1000px;
+    margin: auto;
+    border:1px solid #ccc;
+}
+tr,td{
+    border:1px solid #ccc;
+}
+
+.movieName{
+    padding-left: 100px;
+}

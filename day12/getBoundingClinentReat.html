@@ -1,0 +1,41 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-17 14:46:31
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-17 14:52:03
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            margin-top:200px;
+            margin-left:300px;
+            border: 1px solid #ccc;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>123</div>
+    <script>
+        var div = document.querySelector("div")
+        console.log(div.getBoundingClientRect())
+    </script>
+</body>
+
+</html>

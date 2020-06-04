@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+        }
+
+        .container {
+            width: 600px;
+            height: 300px;
+        }
+
+        .container img {
+            width: 600px;
+            height: 300px;
+        }
+
+        ul {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        ul li {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+        }
+
+        ul li.active {
+          background: red;;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <img>
+        </div>
+        <ul class="page">
+            <!-- <li class="active"></li>
+            <li></li>
+            <li></li> -->
+        </ul>
+    </div>
+
+    <script src="../楼层/lib/require.js" data-main="./js/main"></script>
+</body>
+
+</html>

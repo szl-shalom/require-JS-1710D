@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+    <script src="./js/velocity.min.js"></script>
+    <script>
+
+        var div = document.querySelector("div")
+        Velocity(div, {
+            width: 500,
+        }, {
+            duration: 5000
+        })
+
+        Velocity(div, {
+            height: 500,
+        })
+    </script>
+
+</body>
+
+</html>

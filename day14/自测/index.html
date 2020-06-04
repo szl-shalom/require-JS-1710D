@@ -1,0 +1,164 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-10-18 19:16:17
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-10-19 09:40:37
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 150px auto;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            width: 500px;
+            position: relative;
+            left: 250px;
+            min-height: 300px;
+            /* height: 2000px; */
+        }
+
+        ul li {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            background: red;
+            margin: 10px;
+            /* transition: top .5s; */
+        }
+
+        li span {
+            line-height: 50px;
+            padding-left: 20px;
+
+
+        }
+
+        li span.active {
+            text-decoration: line-through;
+        }
+
+        li button {
+            position: absolute;
+            right: 60px;
+            width: 26px;
+            height: 26px;
+            border: 1px solid #ccc;
+            outline: 0;
+            top: 12px;
+            background: white;
+            color: blue;
+        }
+
+
+        li button.active::after {
+            content: "✔";
+
+        }
+
+        li img {
+            position: absolute;
+            right: 30px;
+            width: 26px;
+            height: 26px;
+            top: 12px
+        }
+
+        .gb {
+            width: 60px;
+            height: 30px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            margin-left: 250px;
+            position: relative;
+        }
+
+        .gb .switch {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            left: 0;
+            transition: left .5s;
+        }
+
+        .gb .switch.active {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: red;
+            left: 30px;
+        }
+
+        .add {
+            border: 1px solid #aaa;
+            display: inline-block;
+            outline: 1px solid #ccc;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>toDo List</h1>
+        <ul>
+            <li style="top:0px">
+                <span class="active">item1</span>
+                <button class="active"></button>
+                <img src="./del.jpg" alt="">
+            </li>
+
+            <li style="top:60px">
+                <span>item2</span>
+                <button></button>
+                <img src="./del.jpg" alt="">
+            </li>
+
+            <li style="top:120px">
+                <span class="active">item3</span>
+                <button class="active"></button>
+                <img src="./del.jpg" alt="">
+            </li>
+
+            <li style="top:180px">
+                <span>item4</span>
+                <button></button>
+                <img src="./del.jpg" alt="">
+            </li>
+
+        </ul>
+        <div class="gb">
+            <div class="switch active"></div>
+        </div>
+        <input type="text">
+        <div class="add">add item</div>
+    </div>
+    <script src="./lib/require.js" data-main="./js/main"></script>
+</body>
+
+</html>
